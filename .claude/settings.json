@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest frontend --typescript --tailwind --app --no-src-dir --import-alias \"@/*\" --no-eslint --yes)",
+      "Bash(npm install *)",
+      "Bash(npx shadcn@latest init --defaults)",
+      "Bash(npx shadcn@latest add button card tabs badge skeleton)",
+      "Bash(python -m venv venv)",
+      "Bash(npm run *)",
+      "Bash(venv/Scripts/python.exe -c ' *)",
+      "Bash(venv/Scripts/uvicorn.exe main:app --reload --port 8000)",
+      "Bash(curl -s \"http://127.0.0.1:8000/api/accommodations?tier=budget\")",
+      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(f'{len\\(d\\)} budget accommodations'\\); [print\\(f'  - {x[\\\\\"name\\\\\"]} \\({x[\\\\\"type\\\\\"]}\\) \\\\${x[\\\\\"price_per_night\\\\\"][\\\\\"min\\\\\"]}-\\\\${x[\\\\\"price_per_night\\\\\"][\\\\\"max\\\\\"]}/night'\\) for x in d]\")",
+      "Bash(curl -s http://127.0.0.1:8000/api/destinations)",
+      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(f'Currency check: {d[0][\\\\\"currency\\\\\"]} — From ₹{d[0][\\\\\"price_from\\\\\"]:,}'\\)\")",
+      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\('Budget accommodations in INR:'\\); [print\\(f'  ₹{a[\\\\\"price_per_night\\\\\"][\\\\\"min\\\\\"]:,}–₹{a[\\\\\"price_per_night\\\\\"][\\\\\"max\\\\\"]:,}/night — {a[\\\\\"name\\\\\"]}'\\) for a in d[:4]]\")",
+      "Bash(taskkill /PID 11716 /F)",
+      "Bash(taskkill /PID 18180 /F)",
+      "Bash(taskkill /PID 7804 /F)",
+      "Bash(taskkill /PID 11716 /F /T)",
+      "Bash(taskkill /PID 18180 /F /T)",
+      "Bash(taskkill /PID 7804 /F /T)",
+      "Bash(taskkill /PID 21808 /F /T)",
+      "Bash(netstat -ano)",
+      "Bash(powershell -Command \"Get-Process -Id 11716,18180,7804,21808 -ErrorAction SilentlyContinue | Select-Object Id,ProcessName,Path\")"
+    ]
+  }
+}

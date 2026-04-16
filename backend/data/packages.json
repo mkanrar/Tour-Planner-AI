@@ -1,0 +1,225 @@
+[
+  {
+    "id": "pkg-coxs-bazar-5d",
+    "destination_id": "coxs-bazar",
+    "title": "Cox's Bazar Beach Escape",
+    "duration_days": 5,
+    "season": "Winter",
+    "price": { "budget": 6700, "standard": 12600, "luxury": 26900 },
+    "includes": ["Hotel", "Transport", "Breakfast"],
+    "itinerary_summary": [
+      "Day 1: Arrive Cox's Bazar, check-in, evening beach walk at Laboni Beach",
+      "Day 2: Full day Inani Beach & Himchhari Falls, local seafood dinner",
+      "Day 3: Day trip to Saint Martin Island by speedboat",
+      "Day 4: Ramu Buddhist Temple, local market, sunset at Cox's Bazar beach",
+      "Day 5: Morning beach walk, depart"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&auto=format&fit=crop",
+    "highlights": ["Sea Beach", "Saint Martin Island", "Himchhari Falls"],
+    "group_size": "2-10"
+  },
+  {
+    "id": "pkg-sajek-3d",
+    "destination_id": "sajek",
+    "title": "Sajek Valley Clouds & Culture",
+    "duration_days": 3,
+    "season": "Autumn",
+    "price": { "budget": 4200, "standard": 7500, "luxury": 15100 },
+    "includes": ["Homestay", "Jeep Transport", "All Meals"],
+    "itinerary_summary": [
+      "Day 1: Dhaka to Sajek via Khagrachhari, arrive at Ruiilui Para, sunset view",
+      "Day 2: Morning cloud sea, Konglak Para trek, tribal village visit",
+      "Day 3: Sunrise photography, return journey"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&auto=format&fit=crop",
+    "highlights": ["Cloud Sea", "Tribal Culture", "Mountain Trek"],
+    "group_size": "2-8"
+  },
+  {
+    "id": "pkg-bandarban-4d",
+    "destination_id": "bandarban",
+    "title": "Bandarban Hills & Waterfalls",
+    "duration_days": 4,
+    "season": "Winter",
+    "price": { "budget": 5900, "standard": 10900, "luxury": 21000 },
+    "includes": ["Hotel", "Jeep/Trekking Guide", "Breakfast"],
+    "itinerary_summary": [
+      "Day 1: Arrive Bandarban, Nilgiri Hills visit, overnight at Nilgiri",
+      "Day 2: Boga Lake trek (challenging), overnight near Boga",
+      "Day 3: Nafakhum Waterfall hike, local tribal village",
+      "Day 4: Return to Bandarban town, depart"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&auto=format&fit=crop",
+    "highlights": ["Nilgiri Hills", "Boga Lake", "Nafakhum Waterfall"],
+    "group_size": "2-12"
+  },
+  {
+    "id": "pkg-sylhet-3d",
+    "destination_id": "sylhet",
+    "title": "Sylhet Tea & Waterfalls",
+    "duration_days": 3,
+    "season": "Spring",
+    "price": { "budget": 3800, "standard": 7100, "luxury": 13400 },
+    "includes": ["Hotel", "CNG Transport", "Breakfast"],
+    "itinerary_summary": [
+      "Day 1: Arrive Sylhet, Jaflong river & stone collection, Tamabil border",
+      "Day 2: Ratargul Swamp Forest boat tour, Bichanakandi crystal water",
+      "Day 3: Tea garden visit, Shahjalal Shrine, depart"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1559181567-c3190ca9d5db?w=800&auto=format&fit=crop",
+    "highlights": ["Ratargul Forest", "Jaflong", "Tea Gardens"],
+    "group_size": "2-10"
+  },
+  {
+    "id": "pkg-sundarbans-3d",
+    "destination_id": "sundarbans",
+    "title": "Sundarbans Tiger Territory",
+    "duration_days": 3,
+    "season": "Winter",
+    "price": { "budget": 10100, "standard": 16800, "luxury": 31900 },
+    "includes": ["Houseboat", "All Meals", "Forest Guide", "Permit"],
+    "itinerary_summary": [
+      "Day 1: Depart Mongla by houseboat, Harbaria eco-center, evening on river",
+      "Day 2: Kotka wildlife zone, tiger track walk with guide, bird watching",
+      "Day 3: Hiron Point lighthouse, Dolphin Point, return journey"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1575550959106-5a7defe28b56?w=800&auto=format&fit=crop",
+    "highlights": ["Tiger Safari", "Boat Cruise", "Bird Watching"],
+    "group_size": "4-15"
+  },
+  {
+    "id": "pkg-maldives-5d",
+    "destination_id": "maldives",
+    "title": "Maldives Luxury Escape",
+    "duration_days": 5,
+    "season": "Winter",
+    "price": { "budget": 75600, "standard": 126000, "luxury": 294000 },
+    "includes": ["Resort", "All Meals", "Water Activities", "Transfers"],
+    "itinerary_summary": [
+      "Day 1: Arrive Male, speedboat to resort, check-in overwater bungalow",
+      "Day 2: Snorkeling at house reef, sunset dolphin cruise",
+      "Day 3: Whale shark excursion, spa afternoon",
+      "Day 4: Local island visit, cultural experience, beach bonfire",
+      "Day 5: Morning dive, depart"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800&auto=format&fit=crop",
+    "highlights": ["Overwater Bungalow", "Whale Sharks", "Snorkeling"],
+    "group_size": "2-8"
+  },
+  {
+    "id": "pkg-thailand-7d",
+    "destination_id": "thailand",
+    "title": "Thailand Temples & Islands",
+    "duration_days": 7,
+    "season": "Winter",
+    "price": { "budget": 33600, "standard": 58800, "luxury": 117600 },
+    "includes": ["Hotel", "Flights (internal)", "Breakfast", "Tour Guide"],
+    "itinerary_summary": [
+      "Day 1: Arrive Bangkok, Wat Pho & Grand Palace",
+      "Day 2: Floating markets, Chatuchak Weekend Market",
+      "Day 3: Fly to Phuket, Patong Beach",
+      "Day 4: Phi Phi Islands full day boat tour",
+      "Day 5: Fly to Chiang Mai, Night Bazaar",
+      "Day 6: Elephant sanctuary, Doi Suthep Temple",
+      "Day 7: Return to Bangkok, depart"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&auto=format&fit=crop",
+    "highlights": ["Bangkok Temples", "Phi Phi Islands", "Chiang Mai"],
+    "group_size": "2-15"
+  },
+  {
+    "id": "pkg-bali-6d",
+    "destination_id": "bali",
+    "title": "Bali Spirit & Surf",
+    "duration_days": 6,
+    "season": "Spring",
+    "price": { "budget": 37800, "standard": 63000, "luxury": 134400 },
+    "includes": ["Villa", "Breakfast", "Driver", "Temple Tours"],
+    "itinerary_summary": [
+      "Day 1: Arrive Denpasar, transfer to Ubud, rice terrace walk",
+      "Day 2: Ubud Monkey Forest, Tegalalang Rice Terraces, Kecak fire dance",
+      "Day 3: Mount Batur sunrise trek",
+      "Day 4: Tanah Lot sunset, move to Seminyak",
+      "Day 5: Seminyak Beach, surf lesson, beach clubs",
+      "Day 6: Uluwatu cliffs, farewell dinner, depart"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&auto=format&fit=crop",
+    "highlights": ["Rice Terraces", "Tanah Lot", "Mount Batur"],
+    "group_size": "2-10"
+  },
+  {
+    "id": "pkg-nepal-8d",
+    "destination_id": "nepal",
+    "title": "Nepal Everest Base Camp Trek",
+    "duration_days": 8,
+    "season": "Autumn",
+    "price": { "budget": 50400, "standard": 79800, "luxury": 151200 },
+    "includes": ["Tea House Stays", "All Meals (trek)", "Guide & Porter", "Permits"],
+    "itinerary_summary": [
+      "Day 1: Arrive Kathmandu, Thamel exploration",
+      "Day 2: Fly to Lukla, trek to Phakding",
+      "Day 3: Trek to Namche Bazaar (acclimatization)",
+      "Day 4: Acclimatization hike, Sherpa culture museum",
+      "Day 5: Trek to Tengboche Monastery",
+      "Day 6: Trek to Dingboche",
+      "Day 7: Reach Everest Base Camp (5,364m)",
+      "Day 8: Return to Lukla, fly to Kathmandu"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&auto=format&fit=crop",
+    "highlights": ["EBC Trek", "Namche Bazaar", "Tengboche"],
+    "group_size": "2-12"
+  },
+  {
+    "id": "pkg-sajek-3d-spring",
+    "destination_id": "sajek",
+    "title": "Sajek Spring Blossoms",
+    "duration_days": 3,
+    "season": "Spring",
+    "price": { "budget": 4200, "standard": 7500, "luxury": 14300 },
+    "includes": ["Homestay", "Jeep Transport", "All Meals"],
+    "itinerary_summary": [
+      "Day 1: Dhaka to Sajek, evening blossom trail walk",
+      "Day 2: Bamboo forest trek, wildflower photography",
+      "Day 3: Morning mist walk, return journey"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&auto=format&fit=crop",
+    "highlights": ["Spring Blossoms", "Bamboo Forest", "Photography"],
+    "group_size": "2-8"
+  },
+  {
+    "id": "pkg-sylhet-3d-winter",
+    "destination_id": "sylhet",
+    "title": "Sylhet Winter Mist Tour",
+    "duration_days": 3,
+    "season": "Winter",
+    "price": { "budget": 3800, "standard": 7100, "luxury": 13000 },
+    "includes": ["Hotel", "Transport", "Breakfast"],
+    "itinerary_summary": [
+      "Day 1: Misty tea garden morning walk, Srimangal tea tasting",
+      "Day 2: Lawachara National Park, wildlife spotting, Madhabpur Lake",
+      "Day 3: Hakaluki Haor, migratory birds, depart"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1559181567-c3190ca9d5db?w=800&auto=format&fit=crop",
+    "highlights": ["Tea Gardens", "Lawachara Forest", "Hakaluki Haor"],
+    "group_size": "2-10"
+  },
+  {
+    "id": "pkg-dubai-5d",
+    "destination_id": "dubai",
+    "title": "Dubai Glitz & Desert",
+    "duration_days": 5,
+    "season": "Winter",
+    "price": { "budget": 67200, "standard": 100800, "luxury": 235200 },
+    "includes": ["Hotel", "Breakfast", "Desert Safari", "City Tour"],
+    "itinerary_summary": [
+      "Day 1: Arrive Dubai, Dubai Mall & Burj Khalifa At the Top",
+      "Day 2: Palm Jumeirah, Atlantis water park",
+      "Day 3: Desert Safari — dune bashing, camel ride, BBQ dinner",
+      "Day 4: Gold Souk, Spice Souk, Abra (water taxi) to Bur Dubai",
+      "Day 5: Dubai Frame, City Walk, depart"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&auto=format&fit=crop",
+    "highlights": ["Burj Khalifa", "Desert Safari", "Palm Jumeirah"],
+    "group_size": "2-12"
+  }
+]
