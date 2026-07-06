@@ -3,7 +3,7 @@ import json
 import os
 from datetime import date, timedelta
 from pathlib import Path
-from openai import AsyncOpenAI
+from openai import AsyncAzureOpenAI, AsyncOpenAI
 from services.hotel_rates import fetch_live_hotel_rates
 
 # ── Load knowledge base ───────────────────────────────────────────────────────
@@ -18,7 +18,50 @@ with open(DATA_DIR / "packages.json", encoding="utf-8") as f:
 with open(DATA_DIR / "accommodations.json", encoding="utf-8") as f:
     ACCOMMODATIONS: list[dict] = json.load(f)
 
-client = AsyncOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+def _env(name: str) -> str | None:
+    value = os.getenv(name)
+    return value.strip() if value and value.strip() else None
+
+
+def _create_model_client() -> tuple[AsyncOpenAI | AsyncAzureOpenAI, str]:
+    openai_api_key = _env("OPENAI_API_KEY")
+    if openai_api_key:
+        return AsyncOpenAI(api_key=openai_api_key), _env("OPENAI_MODEL") or "gpt-4o"
+
+    azure_api_key = _env("AZURE_OPENAI_API_KEY")
+    if azure_api_key:
+        endpoint = _env("AZURE_OPENAI_ENDPOINT")
+        api_version = _env("AZURE_OPENAI_API_VERSION")
+        deployment = _env("AZURE_OPENAI_DEPLOYMENT") or _env("AZURE_OPENAI_MODEL")
+
+        missing = [
+            name
+            for name, value in {
+                "AZURE_OPENAI_ENDPOINT": endpoint,
+                "AZURE_OPENAI_API_VERSION": api_version,
+                "AZURE_OPENAI_DEPLOYMENT": deployment,
+            }.items()
+            if not value
+        ]
+        if missing:
+            raise RuntimeError(
+                "Azure OpenAI is selected because AZURE_OPENAI_API_KEY is set, "
+                f"but these required settings are missing: {', '.join(missing)}"
+            )
+
+        return (
+            AsyncAzureOpenAI(
+                api_key=azure_api_key,
+                azure_endpoint=endpoint,
+                api_version=api_version,
+            ),
+            deployment,
+        )
+
+    raise RuntimeError("Set OPENAI_API_KEY or AZURE_OPENAI_API_KEY before starting the backend.")
+
+
+client, MODEL_NAME = _create_model_client()
 
 # ── System prompt ─────────────────────────────────────────────────────────────
 SYSTEM_PROMPT = """You are an expert AI travel consultant for TourPlanner, specializing in:
@@ -407,7 +450,7 @@ async def run_agent_stream(
 
     # ── Step 1: Resolve tool calls (non-streaming) ───────────────────────────
     response = await client.chat.completions.create(
-        model="gpt-4o",
+        model=MODEL_NAME,
         messages=messages,
         tools=TOUR_TOOLS,
         tool_choice="auto",
@@ -436,7 +479,7 @@ async def run_agent_stream(
             )
 
         response = await client.chat.completions.create(
-            model="gpt-4o",
+            model=MODEL_NAME,
             messages=messages,
             tools=TOUR_TOOLS,
             tool_choice="auto",
@@ -446,7 +489,7 @@ async def run_agent_stream(
     # ── Step 2: Stream final answer ──────────────────────────────────────────
     # messages already contains tool results; ask model to stream its reply
     stream = await client.chat.completions.create(
-        model="gpt-4o",
+        model=MODEL_NAME,
         messages=messages,
         stream=True,
     )
